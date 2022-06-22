@@ -17,18 +17,14 @@ Route::get('/', function () {
 
     $user = "John Smith";
     $user2 = 'Jane Smith';
-    $address = 'Main Str.2';
-    $city = 'NY';
 
     $data = [
         'user' => $user,
-        'user2' => $user2,
-        'address' => $address,
-        'city' => $city
+        'user2' => $user2,     
     ];
 
 
-    return view('home',$data);
+    return view('home', $data);
 })->name('home');
 
 
@@ -38,6 +34,14 @@ Route::get('/about', function(){
 
 
 Route::get('/contact', function(){
-    return view('contact');
+
+    $contact_info = [
+     'phone' => 0035653757,
+     'email' => 'example@about.com',
+     'addresses' => ['Main Str.2', 'Brooklyn, 23', 'Uptown Str. 12'],
+     'city' => 'New York'
+    ];
+    
+    return view('contact', $contact_info);
 })->name('contact');
 

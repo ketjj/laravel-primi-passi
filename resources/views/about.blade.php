@@ -29,8 +29,14 @@
        
     </header>  
 
-    <main>
-      <h5 class="container my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sit qui enim nihil, impedit perferendis quos alias unde. Numquam dolores non voluptate mollitia molestias minima laborum illum doloremque, ipsa quia.</h5>
+    <main class="container my-5">
+      <h5 >About us: </h5>
+      <div>Customers working with K Charles are guaranteed:
+        All movements are compliant and safe
+        Transparent communication
+        Dedicated transport planners experienced in all areas of the industry.
+        Reliable drivers with extensive geographical knowledge, who you can trust to deliver your goods on time, every time.
+        Vehicle tracking system which gives you full visibility from collection to delivery</div>
     </main>
 
 </body>
