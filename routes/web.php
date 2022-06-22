@@ -15,6 +15,29 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    return view('home');
-})->name('Home');
+    $user = "John Smith";
+    $user2 = 'Jane Smith';
+    $address = 'Main Str.2';
+    $city = 'NY';
+
+    $data = [
+        'user' => $user,
+        'user2' => $user2,
+        'address' => $address,
+        'city' => $city
+    ];
+
+
+    return view('home',$data);
+})->name('home');
+
+
+Route::get('/about', function(){
+    return view('about');
+})->name('about');
+
+
+Route::get('/contact', function(){
+    return view('contact');
+})->name('contact');
 

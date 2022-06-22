@@ -1,3 +1,17 @@
 body{
     background-color: rgb(249, 229, 229);
 }
+header{
+    padding: 10px 4em;
+}
+.logo{
+    color: red;
+    font-size: 22px;
+    font-weight: 500;
+}
+ul {
+    text-transform: uppercase;
+}
+ul a{
+   font-weight: 600;
+}
